@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { jsonItem } from 'src/app/model/jsonProduct';
 
 @Component({
   selector: 'app-tienda-input-output',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tienda-input-output.component.scss']
 })
 export class TiendaInputOutputComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }

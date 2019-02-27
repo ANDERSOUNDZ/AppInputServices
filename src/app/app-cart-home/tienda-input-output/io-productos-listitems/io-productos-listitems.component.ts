@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { jsonItem } from 'src/app/model/jsonProduct';
 
 @Component({
   selector: 'app-io-productos-listitems',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IoProductosListitemsComponent implements OnInit {
 
+  @Input() itemUnico: jsonItem;
+
+  @Output() sacarItem = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  itemObj(){
+    this.sacarItem.emit(this.itemUnico);
   }
 
 }

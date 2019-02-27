@@ -1,3 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="center">
     <h1>Tienda In/Outputs</h1>
 </div>
+
+<div fxLayout="row" fxLayoutAlign="space-between">
+    <app-io-productos></app-io-productos>
+    <app-io-carrito (sacarItem)="addIt($event)"></app-io-carrito>
+</div>

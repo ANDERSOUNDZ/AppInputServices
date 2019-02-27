@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { jsonItem } from 'src/app/model/jsonProduct';
 
 @Component({
   selector: 'app-io-carrito',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IoCarritoComponent implements OnInit {
 
+  @Input() itemsl: jsonItem;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  add(item){
+    //this.itemsl.;
   }
 
 }
