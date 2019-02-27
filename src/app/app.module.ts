@@ -13,6 +13,9 @@ import { TiendaInputOutputComponent } from './app-cart-home/tienda-input-output/
 import { SrvProductsComponent } from './app-cart-home/tienda-services/srv-products/srv-products.component';
 import { SrvProductsListItemsComponent } from './app-cart-home/tienda-services/srv-products-list-items/srv-products-list-items.component';
 import { SrvShopCartComponent } from './app-cart-home/tienda-services/srv-shop-cart/srv-shop-cart.component';
+import { IoProductosComponent } from './app-cart-home/tienda-input-output/io-productos/io-productos.component';
+import { IoProductosListitemsComponent } from './app-cart-home/tienda-input-output/io-productos-listitems/io-productos-listitems.component';
+import { IoCarritoComponent } from './app-cart-home/tienda-input-output/io-carrito/io-carrito.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { SrvShopCartComponent } from './app-cart-home/tienda-services/srv-shop-c
     SrvProductsComponent,
     SrvProductsListItemsComponent,
     SrvShopCartComponent,
-    AppCartHomeComponent
+    AppCartHomeComponent,
+    IoProductosComponent,
+    IoProductosListitemsComponent,
+    IoCarritoComponent
     
   ],
   imports: [

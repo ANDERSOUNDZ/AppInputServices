@@ -9,17 +9,11 @@ import { CartShopService } from 'src/app/service/cart-shop.service';
 })
 export class TiendaServicesComponent implements OnInit {
 
-  itemSngl: jsonItem;
-
-  constructor(public cartShopService: CartShopService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  deleteItem(item){
-    this.itemSngl = item;
-    const inicio = this.cartShopService.productCart.indexOf(item);
-    this.cartShopService.productCart.splice(inicio,1); 
-  }
+  
 
 }

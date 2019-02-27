@@ -1,1 +1,1 @@
-<app-srv-products-list-items *ngFor="let item of cartShopService.productCart" [itemSngl]="item" (shareItem)="deleteItem($event)"></app-srv-products-list-items>
+<app-srv-products-list-items *ngFor="let item of cartShopService.productCart" [(itemSngl)]="item" (shareItem)="deleteItem($event)"></app-srv-products-list-items>

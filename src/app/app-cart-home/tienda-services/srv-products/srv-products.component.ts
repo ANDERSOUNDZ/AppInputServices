@@ -9,7 +9,7 @@ import { CartShopService } from 'src/app/service/cart-shop.service';
 })
 export class SrvProductsComponent implements OnInit {
 
-  itemLista: jsonItem []=[
+  itemLista: jsonItem[] = [
 
     {id: 1, //octales no disponibles usar num,eros enteros exactos
     name: "Dasani",
@@ -30,8 +30,8 @@ export class SrvProductsComponent implements OnInit {
   ngOnInit() {
   }
 
-  addItem(producto){
-    this.itemLista.push(producto);
+  addItem(item){
+    this.cartShopService.productCart.push(item);
   }
 
 }
